@@ -1,0 +1,7 @@
+<button class="btn btn-primary" type="button" (click)="toggleDetails()">Display Details</button>
+<p *ngIf="showDetails">{{ paragraphContent }}</p>
+<br />
+<p 
+  *ngFor="let clickTime of clicksTime; index as i" 
+  [ngStyle]="{ 'background-color': i > 4 ? 'green': 'white' }"
+  >{{ clickTime }}</p>
